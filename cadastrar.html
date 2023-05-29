@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONTAWESOME-->
+    <script src="https://kit.fontawesome.com/8458707536.js" crossorigin="anonymous"></script>
+    <!--CSS STYLE-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    
+    <section class="section-container"><!--Inicio section-->
+
+        <div class="main-container"><!--Container-->
+
+            <form action="" class="formulario-principal"><!--Formulário-->
+
+                <!--Dados Pessoais-->
+                <h3 class="subtitulo">Dados Pessoais</h3>
+
+                <div class="formulario-campo">
+                    <label class="campo-etiqueta" for="nome">Nome Completo</label>
+                    <input name="nome" id="nome" class="campo-escrita" required>
+                </div>
+
+                <div class="formulario-dupla">
+
+                    <div class="formulario-campo">
+                        <label class="campo-etiqueta" for="nascimento">Nascimento</label>
+                        <input name="nascimento" id="nascimento" type="date" change="pt-br" class="campo-escrita" required>
+                    </div>
+
+                    <div class="formulario-campo">
+                        <label class="campo-etiqueta" for="telefone">Contato</label>
+                        <input type="tel" name="telefone" id="telefone" placeholder="(XX) XXXXX-XXXX" class="campo-escrita">
+                        <div id="erroContato"></div>
+                    </div>
+
+                </div>
+
+                <div class="formulario-campo">
+                    <label class="campo-etiqueta" for="email">E-mail</label>
+                    <input name="email" id="email" type="email" class="campo-escrita" required />
+                </div>
+                <!--/Dados Pessoais-->
+
+                <!--Endereço-->
+                <h3 class="subtitulo">Endereço</h3>
+
+                <div class="formulario-campo">
+                    <label class="campo-etiqueta" for="cep">CEP</label>
+                    <input name="cep" id="cep" class="campo-escrita" required>
+                    <div id="erro"></div>
+                </div>
+
+                <div class="formulario-campo">
+                    <label class="campo-etiqueta" for="endereco">Endereço</label>
+                    <input name="endereco" id="endereco" class="campo-escrita" required>
+                </div>
+
+                <div class="formulario-dupla">
+
+                    <div class="formulario-campo">
+                        <label class="campo-etiqueta" for="numero">Numero</label>
+                        <input name="numero" id="numero" class="campo-escrita" required>
+                    </div>
+
+                    <div class="formulario-campo">
+                        <label class="campo-etiqueta" for="complemento">Complemento</label>
+                        <input name="complemento" id="complemento" class="campo-escrita">
+                    </div>
+
+                </div>
+
+                <div class="formulario-campo">
+                    <label class="campo-etiqueta" for="bairro">Bairro</label>
+                    <input name="bairro" id="bairro" class="campo-escrita">
+                </div>
+
+                <div class="formulario-dupla">
+
+                    <div class="formulario-campo">
+                        <label class="campo-etiqueta" for="cidade">Cidade</label>
+                        <input name="cidade" id="cidade" class="campo-escrita">
+                    </div>
+
+                    <div class="formulario-campo">
+                        <label class="campo-etiqueta"  for="estado">UF</label>
+                        <select name="estado" id="estado" class="campo-escrita">
+                            <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                        <option value="EX">Estrangeiro</option>
+                        </select>
+                    </div>
+
+                </div>
+               
+                <!--Button-->
+                <div class="form-login">
+                    <input type="submit" value="Enviar Formulário" class="formulario-botao" id="enviar">
+                    <a href="index.html" class="botao-voltar">Voltar Login</a>
+                </div>
+                <!--/Button-->
+
+                <!--/Endereço-->
+
+            </form><!--/Formulário-->
+
+        </div><!--/Container-->
+
+    </section><!--/section-->
+
+    <!--JS-->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
